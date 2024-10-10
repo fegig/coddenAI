@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+p{
+  @apply text-gray-700 dark:text-gray-300 py-4;
+}
+:root{
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.custom-code {
+  font-family: 'Fira Code', monospace;
+  background-color: #2d2d2d; 
+  color: #f8f8f2; 
+  border-radius: 5px; 
+  overflow-x: auto; 
+  white-space: pre; 
+}
+
+.custom-code.language-jsx {
+  background-color: #282c34; 
+}
+
+.custom-code.language-js {
+  background-color: #2c3e50; 
+}
+
+.custom-code.line-numbers {
+  counter-reset: line-number;
+}
+
+.smooth {
+  @apply transition-all duration-300;
+}
+li{
+  @apply list-none py-1;
+}
